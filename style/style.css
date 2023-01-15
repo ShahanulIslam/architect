@@ -40,7 +40,7 @@
     background: rgba(255, 144, 14, 0.1);
     display: flex;
     padding-bottom: 35px;
-    padding-top: 60px;
+    padding-top: 50px;
 }
 .containers{
     width: 80%;
@@ -52,14 +52,16 @@
 }
 .banner-title{
     font-weight: 600;
+    font-size: 45px;
     color: rgba(19, 19, 19, 1);
-    line-height: 26px;
+    line-height: 50px;
 }
 .banner-description{
     font-size: 16px;
     font-weight: 400;
     color: #727272;
     margin-top: 20px;
+    line-height: 25px;
 }
 .primary-btn{
     border: none;
@@ -102,6 +104,7 @@
     font-weight: 400;
     color:rgba(114, 114, 114, 1); 
     margin-top:10px;
+    line-height: 22px;
     margin-bottom: 20px;
 }
 .feature-img{
@@ -164,6 +167,7 @@
     padding: 25px 30px;
     border: 2px solid #FF900E;
     border-radius: 8px;
+    font-size: 20px;
     text-align: center;
 }
 .number{
@@ -175,6 +179,46 @@
 .facts-item:hover{
     color: #ff900e;
     background: #e9aeaedd;
+}
+/* Sponsors-style */
+.sponsors-text{
+    padding-top: 100px;
+    text-align: center;
+    margin:20px 0px;
+}
+.sponsors-title{
+    font-weight: 600;
+    font-size: 45px;
+    color: rgba(19, 19, 19, 1);
+    line-height: 26px;
+}
+.sponsors-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.companys{
+    padding-top: 40px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.company img{
+    filter: grayscale(100%);
+}
+/* Footer style */
+.bg{
+    background: rgba(255, 144, 14, 0.1);
+    margin: 80px auto;
+    padding: 25px;
+}
+.footer-text{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(66, 66, 66, 1);
 }
 /* Responsive */
 /* mobile device */
@@ -206,5 +250,12 @@
     }
     .facts{
         margin-top: 170px;
+    }
+    .companys{
+        flex-direction: column;
+        align-items: center;
+    }
+    .company img{
+        margin-top: 25px;
     }
 }
