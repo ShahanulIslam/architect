@@ -8,6 +8,7 @@
     width: 80%;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 /* Navbar style */
 .navbar{
@@ -36,14 +37,17 @@
 }
 /* Banner section Style */
 .banner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     background: rgba(255, 144, 14, 0.1);
+    display: flex;
+    padding-bottom: 35px;
+}
+.containers{
+    width: 80%;
+    margin: 0 auto; 
 }
 .banner-text{
     text-align: center;
+    margin:20px 0px;
 }
 .banner-title{
     font-weight: 600;
@@ -54,7 +58,6 @@
     font-weight: 400;
     color: #727272;
     margin-top: 20px;
-    margin-bottom: 30px;
 }
 .primary-btn{
     border: none;
@@ -64,19 +67,82 @@
     font-size: 20px;
     font-weight: 600;
     border-radius: 10px;
+    margin-top: 20px;
 }
 .primary-btn:hover{
     color: #ff900e;
     background: white;
     transition: linear .5s;
 }
-.banner-img img{
-    margin:5% 20%;
+/* Our feature part style */
+.our-feature{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.title{
+    font-size: 30px;
+    font-weight: 500;
+}
+.gray{
+    color:rgba(114, 114, 114, 1)
+}
+.black{
+    color: rgba(19, 19, 19, 1);
+}
+.golden{
+    color: rgba(255, 144, 14, 1);
+}
+.sub-title{
+    font-size: 16px;
+    font-weight: 400;
+    color:rgba(114, 114, 114, 1); 
+    margin-top:10px;
+}
+.feature-img{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 20px;
+}
+/* Love and enjoy part style */
+.border{
+    border-left:5px solid #ff900e;
+    font-size: 25px;
+    color: rgba(19, 19, 19, 1);
+    padding-left: 10px;
+    font-weight: 500;
+}
+.text-part{
+    padding-right: 120px;
+    padding-top: 100px;
+}
+.article-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(19, 19, 19, 1);
+}
+.article{
+    padding-left: 30px;
+    box-shadow:0px 0px 10px 10px #fbeded;
+    margin-top: 20px;
+}
+.btn-experience {
+    background: #FF900e;
+    color: white;
+    padding: 20px 25px;
+    position: relative;
+    top: 200px;
+    right: 300px;
+    border-radius: 8px;
+    font-size: 30px;
+    font-weight: 600;
 }
 /* Responsive */
 /* mobile device */
 @media only screen and (max-width:576px) {
-    .navbar , .banner{
+    .navbar , .banner , .container{
         flex-direction: column;
     }
     .nav-item ul{
@@ -84,5 +150,20 @@
     }
     .nav-logo{
         font-size: 10px;
+    }
+    .feature-img{
+        grid-template-columns: repeat(1 ,1fr);
+    } 
+    .our-feature{
+        display: flex;
+        flex-direction: column;
+    }
+    .feature-img img , .img-part img{
+           width: 100%;
+            padding-top: 10px;
+    }
+    .btn-experience{
+        margin-top: -200px;
+        margin-left: 500px;
     }
 }
