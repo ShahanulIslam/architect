@@ -180,6 +180,38 @@
     color: #ff900e;
     background: #e9aeaedd;
 }
+
+/* Team section style */
+.team-section {
+    padding-top: 40px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .team-section header {
+    margin-bottom: 50px;
+  }
+  
+  .team-section h1 {
+    font-size: 45px;
+  }
+  
+  .team-member {
+    display: flex;
+    justify-content: center;
+  }
+  .team-member img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .team-member article {
+    width: 300px;
+    margin: 0 20px;
+    text-align: center;
+  }
 /* Sponsors-style */
 .sponsors-text{
     padding-top: 100px;
@@ -205,6 +237,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10px;
 }
 .company img{
     filter: grayscale(100%);
@@ -220,6 +253,7 @@
     font-weight: 500;
     color: rgba(66, 66, 66, 1);
 }
+  
 /* Responsive */
 /* mobile device */
 @media only screen and (max-width:576px) {
@@ -227,7 +261,7 @@
         flex-direction: column;
         gap: 10px;
     }
-    .nav-item ul{
+    .nav-item ul , .team-member{
         flex-direction: column;
     }
     .nav-logo{
