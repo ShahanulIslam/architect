@@ -183,7 +183,7 @@
 
 /* Team section style */
 .team-section {
-    padding-top: 40px;
+    padding-top: 100px;
     width: 80%;
     margin: 0 auto;
     text-align: center;
@@ -199,7 +199,9 @@
   
   .team-member {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
   }
   .team-member img{
     border-radius: 50%;
@@ -211,6 +213,15 @@
     width: 300px;
     margin: 0 20px;
     text-align: center;
+  }
+  article h2{
+    padding: 5px 0px;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .icon{
+    padding-top: 10px;
+    color: #727272;
   }
 /* Sponsors-style */
 .sponsors-text{
@@ -263,6 +274,7 @@
     }
     .nav-item ul , .team-member{
         flex-direction: column;
+        column-gap: 20px;
     }
     .nav-logo{
         font-size: 25px;
